@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:id="@+id/progressbar"
+        android:progress="20"
+        android:visibility="gone"
+        />
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="730dp"
+        android:id="@+id/myWebView"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/nointernetlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nointernet"
+            />
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtconnection"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="No Internet Connection"-->
+<!--            android:textSize="28sp"-->
+<!--            android:layout_marginTop="560dp"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            />-->
+
+        <Button
+            android:id="@+id/btnN0Connection"
+            android:layout_width="140dp"
+            android:layout_height="65dp"
+            android:text="Retry"
+            android:textColor="@color/colorGradient"
+            android:background="@drawable/roundbtn"
+            android:textSize="20sp"
+            android:layout_marginTop="530dp"
+            android:layout_marginLeft="140dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
